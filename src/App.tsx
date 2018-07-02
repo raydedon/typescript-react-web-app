@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './App.css';
+import MyClass from './MyClass';
+import Profile from './MyFuncComp';
 
 import logo from './logo.svg';
 
@@ -14,6 +16,8 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+          <MyClass isMarried={true}/>
+	      <Profile designation="JAVA DEV" yearsOfExperience={10} companyNames={['TW', 'Amazon', 'Facebook']}/>
       </div>
     );
   }
